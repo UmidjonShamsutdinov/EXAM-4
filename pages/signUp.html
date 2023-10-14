@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../style/main.min.css">
+</head>
+<body>
+    <div class="main-sign-div">
+        <form class="signup-form">
+            <img src="../images/nav-logo.svg" alt="">
+            <h2>Sign Up</h2>
+            <div class="sign__up-inputs">
+                <input type="text" class="firstname-input" placeholder="First Name">
+                <input type="text" class="lastname-input" placeholder="Last Name">
+                <input type="text" class="email-input" placeholder="Email">
+                <div class="passwords-div">
+                    <input type="password" class="password-input" placeholder="Password">            
+                    <button type="button" class="bi bi-eye-fill" id="eye-btn"></button>
+                </div>
+                <p>Don’t you have an account? <a href="./logIn.html">Login</a>.</p>
+            </div>
+            <button type="submit" id="sibmit-btn">Sign Up</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/signUp.js"></script>
+</body>
+</html>

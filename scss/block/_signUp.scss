@@ -1,0 +1,121 @@
+// body{
+//     display: grid;
+//     place-items: center;
+//     // display: flex;
+//     // flex-direction: column;
+//     // justify-content: center;
+//     // align-items: center;
+//     height: 100vh;
+//     width: 100vw;
+//     background-color: #000;
+    .main-sign-div{
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        place-items: center;
+        background-color: #000;
+        >.signup-form{
+            display: flex;
+            flex-direction: column;
+            gap: 20px 0;
+            padding: 28px 50px;
+            border-radius: 76px;
+            background: #F5C147;
+            align-items: center;
+            min-width: 484px;
+            >img{
+                width: 188px;
+                border-radius: 22px;
+                background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+            }
+            >h2{
+                color: #000;
+                font-family: "Jomolhari", sans-serif;
+                font-size: 26px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            >.sign__up-inputs{
+                display: flex;
+                flex-direction: column;
+                gap: 16px 0;
+                >input{
+                    border-radius: 17px;
+                    border: 3px solid #000;
+                    background: #FFF;
+                    padding: 14px 22px;
+                    width: 378px;
+                    color: #787878;
+                    font-family: "Jomolhari", sans-serif;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    outline: none;
+                    &::placeholder{
+                        color: #787878;
+                        font-family: "Jomolhari", sans-serif;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                    }
+                }
+                >.passwords-div{
+                    border-radius: 17px;
+                    border: 3px solid #000;
+                    background: #FFF;
+                    width: 378px;
+                    display: flex;
+                    overflow: hidden;
+                    >input{
+                        padding: 14px 22px;
+                        border: none;
+                        flex: 1;
+                        color: #787878;
+                        font-family: "Jomolhari", sans-serif;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        outline: none;
+                        &::placeholder{
+                            color: #787878;
+                            font-family: "Jomolhari", sans-serif;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 400;
+                        }
+                    }
+                    >button{
+                        padding-right: 16px;
+                        border: none;
+                        background-color: transparent;
+                        font-size: 32px;
+                    }
+                }
+                >p{
+                    color: #000;
+                    font-family: "Jomolhari", sans-serif;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    >a{
+                        color: #0027F3;
+                        text-decoration: none;
+                    }
+                }
+            }
+            >button{
+                border-radius: 23px;
+                background: #000;
+                color: #FFF;
+                padding: 16px 64px;
+                font-family: "Jomolhari", sans-serif;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+// }

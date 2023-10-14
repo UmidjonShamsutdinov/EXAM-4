@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/main.min.css">
+</head>
+<body>
+    <header><h1 style="display: none;"></h1></header>
+    <main class="dashboard-main">
+        <aside id="aside" class="aside">
+            <div id="aside__div">
+                <h2>Dashboard</h2>
+                <div class="dashboard-user-info">
+                    <img src="../images/user-ingo-img.svg" alt="">
+                    <div>
+                        <p>Ibrokhim Jalalov</p>
+                        <p>Author</p>
+                    </div>
+                </div>
+                <div class="sidebar__pages">
+                    <a href="./dashboard.html?page=create">Create Post</a>
+                    <a href="./dashboard.html?page=manage">Manage Posts</a>
+                </div>             
+            </div>
+            <a class="sign-out">Sign Out</a>
+        </aside>
+        <div class="main-dashboard-div">
+            <div data-content-name="create" class="create-post">
+                <h2>Create New Post</h2>
+                <form id="dash-form">
+                    <div  class="create">
+                        <label for="postTitle">Post title</label>
+                        <input name="postTitle" type="text" class="post-title">
+                        <div class="post-img">
+                            <label for="postImg">Post image</label>
+                            <div class="img-url">
+                                <input type="text" class="post-imgg">
+                                <select id="post-img-select">
+                                    <option value="" selected disabled>Select post category</option>
+                                </select>
+                            </div>
+                        </div>
+                        <label for="descriptionArea">Post description</label>
+                        <textarea name="descriptionArea" id="description-area" cols="30" rows="10"></textarea>
+                        <button type="submit">Create Post</button>
+                    </div>
+                </form>
+            </div>
+            <div data-content-name="manage" class="manage-posts">
+                <h2>Manage Posts</h2>
+                <div class="manage-items">
+                    <!-- <div class="grid-items">
+                        <img src="../images/grid-items-img.png" alt="">
+                        <div class="grid__items-content">
+                            <h3>It is about Nature</h3>
+                            <p>It is about nature lorem ipsum dolor sit amet. Dolor sit It is about nature lorem ipsum dolor sit amet....</p>
+                            <div class="grid-items-buttons">
+                                <button id="edit-btn">Edit</button>
+                                <button id="delete-btn">Delete</button>
+                            </div>
+                        </div>
+                    </div> -->
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/dashboard.js"></script>
+</body>
+</html>

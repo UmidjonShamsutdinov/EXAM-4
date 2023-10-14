@@ -1,0 +1,118 @@
+
+main{
+    padding-top: 37px;
+    background-color: #000;
+    padding-left: 86px;
+    >h2{
+        color: #FFF;
+        font-family: "Jomolhari", sans-serif;
+        font-size: 46px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+}
+
+.main__swiper{
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    width: 276px;
+    border: 3px solid #F0DE36;
+    width: 276px !important;
+    height: 400px;
+    background-color: #1E1E1E !important;
+    padding: 4px 5px;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    >a{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        text-decoration: none;
+        // display: grid;
+        // grid-template-rows: 1fr 1fr;
+        >img{
+            width: 100% !important;
+            height: 50% !important;
+            // object-fit: cover contain;
+        }
+        .swiper-slide-content{
+          background-color: transparent;
+          display: flex;
+          flex-direction: column;
+        // align-items: center;
+        justify-content: space-between;
+          flex: 1;
+          gap: 18px 0;
+          padding: 12px;
+          >h2{
+              color: #FFF;
+              font-family: "Jomolhari", sans-serif;
+              font-size: 20px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+          }
+          >p{
+              color: #FFF;
+              font-family: "Jomolhari", sans-serif;
+              font-size: 12px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+          }        
+          >.user-info{
+              display: flex;
+              gap: 0 9px;
+            //   position: absolute;
+            //   bottom: 2%;
+            //   left: 5%;
+              >div{
+                  :first-child{
+                      color: #FFF;
+                      font-family: "Jomolhari", sans-serif;
+                      font-size: 12px;
+                      font-style: normal;
+                      font-weight: 400;
+                      line-height: normal;
+                  }
+                  :last-child{
+                      color: #787878;
+                      font-family: "Jomolhari", sans-serif;
+                      font-size: 12px;
+                      font-style: normal;
+                      font-weight: 400;
+                      line-height: normal;
+                  }
+              }
+          }
+        }
+    }
+  }
+
+//   .swiper-slide img {
+//     display: block;
+//     width: 100%;
+//     height: 100%;
+//     object-fit: cover;
+//   }
+
+

@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header{
+    background-color: #000;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 18px 0;
+        >.sign-log-in{
+            display: flex;
+            gap: 0 42px;
+            align-items: center;
+            >a{
+                color: #FFF;
+                font-family: "Inter", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
+
+.hero__img{
+    height: 416px;
+    background-image: url("../../images/hero-img.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+.hide-user{
+    display: block !important;
+}
+
+.appearUser{
+    display: flex !important;
+}
+
+
+.user-info-local{
+    display: flex;
+    gap: 0 7px;
+    width: 200px;
+    >div{
+        display: flex;
+        flex-direction: column;
+        gap: 7px 0;
+        color: #FFF;
+    }
+}

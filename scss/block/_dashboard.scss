@@ -1,0 +1,313 @@
+body{
+    position: relative;
+}
+.dashboard-main{
+    padding: 0;
+    display: flex;
+    background-color: #000;
+    gap: 0 40px;
+    height: 170vh;
+    padding: 52px 70px;
+    .aside{
+        background-color: antiquewhite;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 270px;
+        width: 100%;
+        border-radius: 31px;
+        background: #F5C147;
+        padding: 22px 18px 36px 18px;
+        align-items: center;
+        #aside__div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            gap: 20px 0;
+            >h2{
+                color: #000;
+                font-family: "Jomolhari", sans-serif;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            .dashboard-user-info{
+                border-radius: 22px;
+                background: #FFF;
+                width: 100%;
+                display: flex;
+                gap: 0 14px;
+                padding: 14px 10px;
+                >div{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 5px;                    
+                    :first-child{
+                        color: #000;
+                        font-family: "Jomolhari", sans-serif;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                    :last-child{
+                        color: #787878;
+                        font-family: "Jomolhari", sans-serif;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }                
+                }
+            }
+            >.sidebar__pages{
+                display: flex;
+                flex-direction: column;
+                gap: 20px 0;
+                width: 100%;
+                >a{
+                    padding: 14px 66px 14px 32px ;
+                    text-decoration: none;
+                    border-radius: 20px;
+                    background: #FFF;
+                    color: #000;
+                    font-family: "Jomolhari", sans-serif;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    width: 100%;
+                }
+            }
+        }
+        >a{
+            text-decoration: none;
+            color: #000;
+            font-family: "Jomolhari", sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    .main-dashboard-div{
+        background-color: transparent;
+        width: 100%;
+        .create-post{
+            padding: 34px 0;
+            display: none;
+            >h2{
+                color: #FFF;
+                font-family: Jomolhari;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+            >form{
+                >.create{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 37px 0;
+                    border-top: 1px solid #787878;
+                    gap: 7px 0;
+                    label{
+                        color: #FFF;
+                        font-family: Jomolhari;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }                
+                    input{
+                        border-radius: 15px;
+                        background: #FFF;
+                        height: 44px;
+                        outline: none;
+                        padding: 0 10px;
+                        border: none;
+                    }
+                    >.post-img{
+                        display: flex;
+                        margin: 64px 0;
+                        gap: 7px 0;
+                        flex-direction: column;
+                        >.img-url{
+                            display: flex;
+                            gap: 0 28px;
+                            width: 100%;
+                            align-items: center;
+                            height: 44px;
+                            >input{
+                                flex: 1;
+                            }
+                            >select{
+                                border-radius: 15px;
+                                background: #FFF;
+                                height: 100%;
+                                outline: none;
+                                padding: 0 20px;
+                                color: #000;
+                                font-family: Jomolhari;
+                                font-size: 20px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                option{
+                                    color: #000;
+                                    font-family: Jomolhari;
+                                    font-size: 20px;
+                                    font-style: normal;
+                                    font-weight: 400;
+                                    line-height: normal;
+                                }
+                            }
+                        }
+                    }
+                    >textarea{
+                        width: 100%;
+                        border-radius: 15px;
+                        background: #FFF;
+                        resize: none;
+                        margin-bottom: 42px;
+                        padding: 10px;
+                    }
+                    button{
+                        border-radius: 10px;
+                        background: #F5C147;
+                        color: #000;
+                        font-family: Jomolhari;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                        padding: 16px 0;
+                        width: 248px;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+        .manage-posts{
+            padding-top: 34px;
+            display: none;
+            height: 100%;
+            >h2{
+                color: #FFF;
+                font-family: Jomolhari;
+                font-size: 30px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                margin-bottom: 16px;
+            }
+           
+            >.manage-items{
+                padding: 40px 0 20px 0;
+                border-top: 1px solid #787878;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 110px;
+                height: 93%;
+                justify-content: space-between;
+                overflow-y: auto;
+                >.grid-items{
+                    display: flex;
+                    flex-direction: column;
+                    border: 3px solid #F0DE36;
+                    background: #1E1E1E;
+                    padding: 2px;
+                    width: 280px;
+                    
+                    >img{
+                        width: 100%;
+                        height: 50%;
+                    }
+                    // background-color: #fff;
+                    >.grid__items-content{
+                        padding: 9px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px 0;
+                        justify-content: space-between;
+                        height: 100%;
+                        >h3{
+                            color: #FFF;
+                            font-family: Jomolhari;
+                            font-size: 20px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                        >p{
+                            color: #FFF;
+                            font-family: Jomolhari;
+                            font-size: 12px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            width: 100%;
+                            word-break: break-all;
+                        }
+                        >.grid-items-buttons{
+                            display: flex;
+                            justify-content: space-between;
+                            gap: 0 17px;
+                            :first-child{
+                                background: #F5C147;
+                                color: #000;
+                                font-family: Jomolhari;
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                border: none;
+                                width: 100%;
+                                padding: 7px 0;
+                            }
+                            :last-child{
+                                background: #CA3838;
+                                color: #FFF;
+                                font-family: Jomolhari;
+                                font-size: 12px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                border: none;
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+            >.manage-items::-webkit-scrollbar{
+                -webkit-appearance: none;    
+                display: none;
+            }
+        }
+    }
+
+}
+
+.modal{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    #delete-form{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: #FFF;
+    }
+}
+
+
+.sidebar__pages a[aria-current="page"]{
+    background-color: #000000 !important;
+    color: #fff !important;
+}
